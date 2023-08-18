@@ -56,5 +56,6 @@ message PolicyInfo {
 
 // ListPoliciesResponse defines ListPolicies response struct.
 message ListPoliciesResponse {
-
+  int64 total_count = 1;
+  repeated PolicyInfo items = 2;
 }
